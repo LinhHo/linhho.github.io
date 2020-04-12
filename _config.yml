@@ -1,2 +1,3 @@
 name: Linh Ho, PhD student in energy meteorology
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
