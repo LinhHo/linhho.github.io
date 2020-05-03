@@ -27,6 +27,9 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : "/assets/images/Windy_window_summer_afternoon.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/maru_taro_roll.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Supposed to be masthead title" # overrides the website title displayed in the masthead, use " " for no title
+image:
+  feature: Norwich_castle_Meadow_201709.jpg
+  credit: Linh Ho
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
