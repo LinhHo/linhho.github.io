@@ -24,7 +24,7 @@ description              : "Personal website of Linh Ho to store all matters the
 url                      : "https://linhho.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/Windy_window_summer_afternoon.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : ""/assets/images/Windy_window_summer_afternoon.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/maru_taro_roll.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Supposed to be masthead title" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Linh Ho"
-  avatar           : "/assets/images/Carrick-a-Rede_Rope_bridge_back.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio_avatar2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in energy meteorology at Institute of Geophysics and Meteorology, University of Cologne, Germany."
   location         : "Cologne, Germany"
   email            :
