@@ -8,7 +8,7 @@ main:
     url: /blog/
     description: "My ramblings about everything I find interesting"
   - title: "About"
-    url: /about/
+    url: "/about/"
   - title: "Research"
     url: /research/
   # - title: "Sitemap"
