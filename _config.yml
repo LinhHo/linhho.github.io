@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "en-GB"
+title                    : "Linh Ho's Website"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Hey, this is a subtitle" # site tagline that appears below site title in masthead
 name                     : "Linh Ho"
-description              : "Personal website of Linh Ho"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Personal website of Linh Ho to store all matters the World as I see"
+url                      : "https://linhho.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "linhho.github.io/_image/Norwich_castle_Meadow_201709.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+teaser                   : /assets/images/Windy_window_summer_afternoon.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/maru_taro_roll.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Supposed to be masthead title" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Linh Ho"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Carrick-a-Rede_Rope_bridge_back.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in energy meteorology at Institute of Geophysics and Meteorology, University of Cologne, Germany."
   location         : "Cologne, Germany"
   email            :
@@ -113,7 +113,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/LinhHo/"
+      url: "https://github.com/LinhHo/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -129,7 +129,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/LinhHo/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
