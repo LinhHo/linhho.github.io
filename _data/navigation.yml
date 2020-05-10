@@ -5,9 +5,9 @@ main:
   - title: "Blog"
     url: /blog/
     description: "My ramblings about everything I find interesting"
-  - title: "About"
-    url: "/about/"
   - title: "Research"
     url: /research/
+  - title: "About"
+    url: "/about/"
   # - title: "Sitemap"
   #   url: /sitemap/
