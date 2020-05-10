@@ -2,11 +2,11 @@
 main:
 #  - title: "Quick-Start Guide"
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Research"
+    url: /research/
   - title: "Blog"
     url: /blog/
     description: "My ramblings about everything I find interesting"
-  - title: "Research"
-    url: /research/
   - title: "About"
     url: "/about/"
   # - title: "Sitemap"
