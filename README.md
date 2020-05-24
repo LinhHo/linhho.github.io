@@ -1,3 +1,6 @@
+## Useful links I used to create my website
+https://www.cross-validated.com/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II/
+
 ## Welcome to GitHub Pages 
 
 You can use the [editor on GitHub](https://github.com/LinhHo/linhho.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
