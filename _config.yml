@@ -30,6 +30,13 @@ masthead_title           : "Supposed to be masthead title" # overrides the websi
 image:
   feature: /assets/images/Norwich_castle_Meadow_201709.jpg
   credit: Linh Ho 2017-09
+excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
+header:
+  overlay_image: /assets/images/Norwich_castle_Meadow_201709.jpg
+  caption: "Photo credit: Linh Ho [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
