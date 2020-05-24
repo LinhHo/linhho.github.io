@@ -1,8 +1,11 @@
 ## Useful links I used to create my website
-From Minimal Mistakes\\
-https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme \\
-For minor tweaks\\
-https://www.cross-validated.com/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II/ \\
+From Minimal Mistakes
+
+https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+For minor tweak
+
+https://www.cross-validated.com/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II/
 
 ## Welcome to GitHub Pages 
 
