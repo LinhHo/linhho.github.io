@@ -3,6 +3,10 @@ From Minimal Mistakes
 
 https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+Where to start
+
+https://zenglix.github.io/personal_website/
+
 For minor tweak
 
 https://www.cross-validated.com/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II/
