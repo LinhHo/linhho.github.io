@@ -11,18 +11,18 @@
 }
 
 body {
-    margin: 60px auto;
+    margin: 100px auto;
     width: 70%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 30px;
     list-style: none;
     font-weight: bold;
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 a {
     text-decoration: none;
