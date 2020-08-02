@@ -6,11 +6,3 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-
-.header-img {
-  width: 100%;
-  height: 400px;
-  background: url('https://github.com/LinhHo/linhho.github.io/blob/master/assets/images/Norwich_castle_Meadow_201709.jpg');
-  background-size: cover;
-}
