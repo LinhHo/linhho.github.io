@@ -1,3 +1,8 @@
+
+---
+layout: post
+title: "Why sea ice melting in the Arctic attract more attention?"
+date: 2019-03-03
 defaults:
   # _posts
   - scope:
@@ -10,10 +15,6 @@ defaults:
       comments: true
       share: true
       related: true
----
-layout: post
-title: "Why sea ice melting in the Arctic attract more attention?"
-date: 2019-03-03
 ---
 
 Những thay đổi khí hậu khi nhắc tới Băng tan hay thấy chỉ nói ở Bắc cực. Vậy thì những thay đổi này chỉ ở Bắc Cực hay ở Nam cực cũng vậy, với cả ở Nam Cực thì có đất đai nữa nên là khối băng hình thành và tan đi sẽ khác gì ở Bắc Cực ko?
