@@ -4,7 +4,7 @@ layout: post
 title: "Why sea ice melting in the Arctic attract more attention?"
 date: 2019-03-03
 defaults:
-  # _posts
+  - _posts
   - scope:
       path: ""
       type: posts
