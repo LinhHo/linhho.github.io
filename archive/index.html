@@ -5,13 +5,22 @@ title: Archived information
 	<h1> Links related to work </h1>
 
 	<p>
+
+	A list of useful links for work
 	<ol class="blurb">
+
 		<li>
-			JOYCE cloud
-			<a href="www.joyce.cloud" target="_blank">website</a>
+			Data:
+			<a href="https://esgf-data.dkrz.de/projects/cmip6-dkrz/" target="_blank">CMIP6 DKRZ</a>,
+			<a href="https://reanalysis.meteo.uni-bonn.de/?Download_Data___COSMO-REA6" target="_blank">COSMO-REA6 Bonn</a>
+			<br/>
+			Energy: ERA5 derived country-aggregated demand, wind and solar generation
+			<a href="https://researchdata.reading.ac.uk/227/" target="_blank">Bloomfield - UniReading</a>
 		</li>
 
 		<li>
+			Courses:
+			<a href="https://www.ecmwf.int/assets/elearning/da/da1/story_html5.html" target="_blank">Data assimilation ECMWF</a>
 			<a href="https://www2.cisl.ucar.edu/events/summer-school/ai4ess/2020/artificial-intelligence-earth-system-science-ai4ess-summer-school" target="_blank">AI4ES summer school</a> will be held virtually June 22-26, 2020 by the National Center for Atmospheric Research (Boulder, Colorado, USA).
 		</li>
 
@@ -20,13 +29,21 @@ title: Archived information
 		</li>
 
 		<li>
-			<a href="https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial" target="_blank">CDO wiki</a>
 		</li>
 
 		<li>
+			Observations: <br/>
+			JOYCE cloud
+			<a href="www.joyce.cloud" target="_blank">website</a>
+			<br/>
 			Precipitation data satellite Germany
 			<a href="http://gop.meteo.uni-koeln.de/~Hatpro/dataBrowser/dataBrowser2.html?site=JOYCE&date=-1&UpperLeft=Parsivel-Pluvio-MRR_precipitation-rate&UpperRight=Parsivel-Pluvio-MRR_Accumulated_Precipitation" target="_blank">Jülich JOYCE</a> <br>
 			<a href="https://www.ifgeo.uni-bonn.de/abteilungen/meteorologie/messdaten/radarbilder/aktuelle-bilder/komposit-regenraten" target="_blank">Bonn</a>
+			<a href="www.joyce.cloud" target="_blank">website</a> <br/>
+			<br/>
+			Aerosol
+			<a href="https://aeronet.gsfc.nasa.gov/cgi-bin/data_display_aod_v3?site=FZJ-JOYCE&nachal=0&year=2020&month=9&day=11&aero_water=0&level=1&if_day=0&if_err=0&place_code=10&year_or_month=0" target="_blank">aerosol net</a>
+
 		</li>
 
 		<li>
@@ -42,20 +59,86 @@ title: Archived information
 			Python
 			<a href="https://python-course.eu/numpy.php" target="_blank">course - Numpy</a> and
 			<a href="https://docs.python.org/3/tutorial/" target="_blank">python3 tutorial</a>
+			<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006907" target="_blank">quick tips for reducing dimention</a>,
+			<a href="https://pyam-iamc.readthedocs.io/en/stable/data.html#the-iamc-timeseries-format-for-scenario-data" target="_blank">pyam package</a> similar to dplyr
+
 		</li>
 
 		<li>
-			<a href="https://unidata.github.io/netcdf4-python/netCDF4/" target="_blank">netCDF documentation</a>
+			Documentation:
+			<a href="https://unidata.github.io/netcdf4-python/netCDF4/" target="_blank">netCDF4 package</a>,
+      CDO
+			<a href="https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial" target="_blank">wiki</a>,
+			<a href="https://code.mpimet.mpg.de/projects/cdo/wiki/Cdo#Documentation" target="_blank">documentation</a>,
+			<a href="https://www.dkrz.de/up/services/analysis/data-processing/tools/cdo-examples" target="_blank">DKRZ examples</a>
+			<br/>
+			HErZ:
+			<a href="https://www.dwd.de/DE/klimaumwelt/klimaforschung/klimaueberwachung/publikationen_klimaueberwachung/literatur_reanalyse_node.html" target="_blank">Literature list on COSMO</a>
+			<br/>
+			grib:
+			<a href="https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib/tricks.wgrib" target="_blank">wgrib</a>,
+			<a href="https://www.ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2" target="_blank">wgrib2 tricks</a>
+			<br/>
+			Jupyter:
+			<a href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/" target="_blank">jupyter notebook tricks</a>
+
 		</li>
 
 		<li>
+			Tips for plotting:
+			<br/>
 			Matplotlib samples from <a href="https://www.dkrz.de/up/services/analysis/visualization/sw/matplotlib" target="_blank">DKRZ source code</a>
-			and <a href="https://www.pyngl.ucar.edu/" target="_blank">PyNGL from NCAR</a>
+			and <a href="https://www.pyngl.ucar.edu/" target="_blank">PyNGL from NCAR</a>;
+			<a href="https://blog.datawrapper.de/beautifulcolors/" target="_blank">Beautiful colors</a>
+
 		</li>
 
+
+	</ol>
+
+	Useful command lines
+
+	<ol class="blurb">
 		<li>
 			Animation from png files (Melanie) <br>
 			ffmpeg -framerate 3 -pattern_type glob -i '*.png' -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4
 		</li>
 
+		<li>
+			wgrib -h cutoffs/cutoff_2007.2d.grb | grep "var156" > out.txt
+			wget -b
+		</li>
+
+		<li>
+			Listen to what ports are used: netstat -tulpn | grep LISTEN
+		</li>
+
+		<li>
+			cdo -timmean ifile.nc file.nc
+			cdo -timmean -selmon,01,02,12 ifile.nc ofile.nc
+			cdo -timmean -selyear,2000/2010 file …
+			For mon in 01 02 ..
+			do
+			cdo …
+			done
+			cdo selday,01/15 ifile ofile_April1-15.nc
+			cdo selday,16/30 file ofile_April16-end.nc
+			cdo mergetime ifle1_dec ifile_01 ofile_winterGWL.nc
+			cdo -r -f nc copy ifile.grb file.nc
+			cdo daymean -cat '/data/etcc/cosmo-rea6/15min/SWDIRS_RAD.2D/2007/*/*.grb' mean.grb
+
+		</li>
+
 	</ol>
+
+  Others
+	<ol class="blurb">
+		<li>
+			Hiking:
+			<a href="https://www.komoot.de/tour/255018740?ref=atd" target="_blank">Hiking planning</a>,
+    </li>
+		<li>
+			Organise your trip:
+			<a href="https://www.tricount.com/en/" target="_blank">tricount</a>
+		</li>
+  </ol>
