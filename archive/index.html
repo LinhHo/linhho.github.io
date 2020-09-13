@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Archived information
 ---
 	<h1> Links related to work </h1>
@@ -26,9 +26,6 @@ title: Archived information
 
 		<li>
 			<a href="https://opendata.dwd.de/climate_environment/REA/COSMO_REA6/" target="_blank">COSMO_REA6 data DWD</a>
-		</li>
-
-		<li>
 		</li>
 
 		<li>
@@ -105,7 +102,7 @@ title: Archived information
 		</li>
 
 		<li>
-			wgrib -h cutoffs/cutoff_2007.2d.grb | grep "var156" > out.txt
+			wgrib -h cutoffs/cutoff_2007.2d.grb | grep "var156" > out.txt <br>
 			wget -b
 		</li>
 
@@ -114,18 +111,18 @@ title: Archived information
 		</li>
 
 		<li>
-			cdo -timmean ifile.nc file.nc
-			cdo -timmean -selmon,01,02,12 ifile.nc ofile.nc
-			cdo -timmean -selyear,2000/2010 file …
-			For mon in 01 02 ..
-			do
-			cdo …
-			done
-			cdo selday,01/15 ifile ofile_April1-15.nc
-			cdo selday,16/30 file ofile_April16-end.nc
-			cdo mergetime ifle1_dec ifile_01 ofile_winterGWL.nc
-			cdo -r -f nc copy ifile.grb file.nc
-			cdo daymean -cat '/data/etcc/cosmo-rea6/15min/SWDIRS_RAD.2D/2007/*/*.grb' mean.grb
+			cdo -timmean ifile.nc file.nc <br>
+			cdo -timmean -selmon,01,02,12 ifile.nc ofile.nc <br>
+			cdo -timmean -selyear,2000/2010 file … <br>
+			For mon in 01 02 .. <br>
+			do <br>
+			cdo … <br>
+			done <br>
+			cdo selday,01/15 ifile ofile_April1-15.nc <br>
+			cdo selday,16/30 file ofile_April16-end.nc <br>
+			cdo mergetime ifle1_dec ifile_01 ofile_winterGWL.nc <br>
+			cdo -r -f nc copy ifile.grb file.nc <br>
+			cdo daymean -cat '/data/etcc/cosmo-rea6/15min/SWDIRS_RAD.2D/2007/*/*.grb' mean.grb <br>
 
 		</li>
 
