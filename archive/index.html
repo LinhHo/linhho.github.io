@@ -13,9 +13,13 @@ title: Archived information
 			Data:
 			<a href="https://esgf-data.dkrz.de/projects/cmip6-dkrz/" target="_blank">CMIP6 DKRZ</a>,
 			<a href="https://reanalysis.meteo.uni-bonn.de/?Download_Data___COSMO-REA6" target="_blank">COSMO-REA6 Bonn</a>
+			or <a href="ftp://ftp.meteo.uni-bonn.de/pub/reana/COSMO-REA2/" target="_blank">REA2</a>,
+			<a href="https://opendata.dwd.de/climate_environment/REA/COSMO_REA6/" target="_blank">COSMO_REA6 data DWD</a>
 			<br/>
 			Energy: ERA5 derived country-aggregated demand, wind and solar generation
 			<a href="https://researchdata.reading.ac.uk/227/" target="_blank">Bloomfield - UniReading</a>
+			ECMWF policy
+			<a href="https://www.ecmwf.int/en/about/media-centre/news/2020/ecmwf-moves-towards-policy-open-data" target="_blank">Open data and charts</a>
 		</li>
 
 		<li>
@@ -25,7 +29,13 @@ title: Archived information
 		</li>
 
 		<li>
-			<a href="https://opendata.dwd.de/climate_environment/REA/COSMO_REA6/" target="_blank">COSMO_REA6 data DWD</a>
+			Relevant institutions
+			<a href="https://developer.nrel.gov/" target="_blank">US renewable energy laboratory</a>
+		</li>
+
+		<li>
+			<a href="https://www.thewindpower.net/" target="_blank">Wind power onshore</a> data European countries
+			<a href="https://www.4coffshore.com/offshorewind/" target="_blank">Offshore </a>
 		</li>
 
 		<li>
@@ -44,6 +54,7 @@ title: Archived information
 		</li>
 
 		<li>
+			<a href="https://zoom.earth/" target="_blank">Zoom Earth</a> and
 			Weather map
 			<a href="https://www.wetterdienst.de/Maps/Deutschland/" target="_blank">DWD precipitation</a> and
 			<a href="https://www.wetterdienst.de/Deutschlandwetter/Satellitenbilder/Satellitenfilm/" target="_blank">satellitefilm</a>; Windy weather radar in
@@ -58,6 +69,8 @@ title: Archived information
 			<a href="https://docs.python.org/3/tutorial/" target="_blank">python3 tutorial</a>
 			<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006907" target="_blank">quick tips for reducing dimention</a>,
 			<a href="https://pyam-iamc.readthedocs.io/en/stable/data.html#the-iamc-timeseries-format-for-scenario-data" target="_blank">pyam package</a> similar to dplyr
+			Huyen Chip
+			<a href="https://github.com/chiphuyen/just-pandas-things" target="_blank">Just pandas things</a>
 
 		</li>
 
@@ -74,11 +87,18 @@ title: Archived information
 			<br/>
 			grib:
 			<a href="https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib/tricks.wgrib" target="_blank">wgrib</a>,
+			<a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/rpn.html" target="_blank">wgrib2</a>,
 			<a href="https://www.ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2" target="_blank">wgrib2 tricks</a>
+
 			<br/>
 			Jupyter:
 			<a href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/" target="_blank">jupyter notebook tricks</a>
 
+		</li>
+
+		<li>
+			Weather regime classification
+			<a href="https://www.dwd.de/EN/ourservices/wetterlagenklassifikation/wetterlagenklassifikation.html" target="_blank">wetterlagen from DWD</a>,
 		</li>
 
 		<li>
@@ -115,7 +135,12 @@ title: Archived information
 			Towards data science
 			<a href="https://towardsdatascience.com/5-pro-tips-to-grow-your-python-skills-as-a-data-scientist-or-ml-engineer-1b899a91d6e" target="_blank">
 				5 pro tips to grow your python skills</a>  for data scientists or machine learning engineer
+			<a href="https://towardsdatascience.com/10-practical-tips-you-need-to-know-to-personalize-jupyter-notebook-fbd202777e20" target="_blank">
+				10 practical tips to personalize jupyter notebook</a>
 
+		</li>
+
+		<li>
 
 		</li>
 
@@ -126,12 +151,17 @@ title: Archived information
 	<ol class="blurb">
 		<li>
 			Animation from png files (Melanie) <br>
-			ffmpeg -framerate 3 -pattern_type glob -i '*.png' -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4
+			<code>ffmpeg -framerate 3 -pattern_type glob -i '*.png' -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4</code>
 		</li>
 
 		<li>
 			<code>wgrib -h cutoffs/cutoff_2007.2d.grb | grep "var156" > out.txt </code><br>
 			<code>wget -b</code>
+			<code>wget https://opendata.dwd.de/climate_environment/REA/COSMO_REA6/daily/2D/T_2M/T_2M.2D.2010{01..12}.DayMean.grb</code>
+			<code>cat infile1.grb infile2.grb > out.grb</code>
+			<code>grep -r --after-context=2 --before-context=2 'shapefile' *</code>
+			(-r: search also inside sub-directory)
+
 		</li>
 
 		<li>
@@ -139,6 +169,8 @@ title: Archived information
 		</li>
 
 		<li>
+			<code>cdo pardes/showname ifile.grb/nc? (list of variables)</code>
+
 			<pre><code>
 			cdo -timmean ifile.nc file.nc
 			cdo -timmean -selmon,01,02,12 ifile.nc ofile.nc
