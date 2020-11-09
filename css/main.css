@@ -56,8 +56,10 @@ ul.posts li {
 }
 
 pre code {
-  background-color: #eee;
+  background-color: #eef;
+  color: rgb(20, 199, 29);
+  font-size: 12px;
   border: 1px solid #999;
   display: block;
-  padding: 20px;
+  padding: 10px;
 }
