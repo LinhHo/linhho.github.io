@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 title: Archived information
 ---
 	<h1> </h1>
@@ -111,6 +111,7 @@ title: Archived information
 		</li>
 
 		<li>
+			<pre><code>
 			cdo -timmean ifile.nc file.nc <br>
 			cdo -timmean -selmon,01,02,12 ifile.nc ofile.nc <br>
 			cdo -timmean -selyear,2000/2010 file … <br>
@@ -123,6 +124,7 @@ title: Archived information
 			cdo mergetime ifle1_dec ifile_01 ofile_winterGWL.nc <br>
 			cdo -r -f nc copy ifile.grb file.nc <br>
 			cdo daymean -cat '/data/etcc/cosmo-rea6/15min/SWDIRS_RAD.2D/2007/*/*.grb' mean.grb <br>
+			</code></pre>
 
 		</li>
 
