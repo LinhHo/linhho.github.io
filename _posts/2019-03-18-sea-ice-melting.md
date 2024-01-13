@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Tại sao ta chỉ hay nghe nói về băng tan ở Bắc Cực?"
 date: 2019-03-18
 defaults:

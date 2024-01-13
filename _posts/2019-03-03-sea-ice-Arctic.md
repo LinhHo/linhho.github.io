@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Why sea ice melting in the Arctic attract more attention?"
 date: 2019-03-03
 defaults:
@@ -43,7 +43,7 @@ However, in terms of sea ice loss by climate change, the Arctic has left its cou
 
 In general, Antarctic ice is also decreasing, but its glaciers behave more complicatedly. While glaciers in the West Antarctica are melting, its interior and the East’s glaciers are increasing because of heavy snowfall. This actually is another sign of global warming as the moisture increases in warmer climate, leads to more snow. Sientists found that Antarctica’s rate of ice loss has tripled in the last decade [5].
 
- 3. Why does the Arctic attract more attention? 
+3. Why does the Arctic attract more attention? 
 The Arctic has an apparent consequence of sea ice loss. Studies predict that the Artic will be ice free by 2040 [6]. The phenomena of sea ice melting has not yet been very apparent in the Antarctica compared to the Arctic. Furthermore, the land under Antarctic ice makes it hard to measure the exact amount of ice there, while sea ice in the Arctic has quite consistent height of 4 to 5 metres.
 
 Another reason for the attention might be the Arctic’s position. It lies near the busiest maritime trading route in the world, the north Atlantic between the US and the Europe. There is a hot debate on whether the melting sea ice can affect the movement of ocean water, especially the Gulf Stream which bring warm temperature and mild weather to Western Europe and Eastern coast of the US. When the sea ice forms, much of the salt is squeezed out, make the surrounding cold water become saltier, heavier, and sinks, complete the ocean current [7]. With much of sea ice water melt, the water might become less salty, lower density and cannot sink to maintain the Gulf Stream. However, there is still not enough scientific evidence to back up this theory.
