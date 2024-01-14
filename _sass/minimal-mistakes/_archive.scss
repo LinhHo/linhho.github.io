@@ -243,7 +243,7 @@
 .feature__item {
   position: relative;
   margin-bottom: 2em;
-  font-size: 1.125em;
+  font-size: 1em;
 
   @include breakpoint($small) {
     float: left;
@@ -292,7 +292,7 @@
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.125em;
+    font-size: 1em;
 
     .archive__item {
       float: left;
@@ -333,7 +333,7 @@
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.125em;
+    font-size: 1em;
 
     .archive__item {
       float: left;
@@ -376,7 +376,7 @@
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.125em;
+    font-size: 1em;
 
     .archive__item {
       float: left;
