@@ -23,14 +23,12 @@ tags:
 ---
 
 Thử chọn xem bạn thích làm bài kiểm tra nào nhất nhé.
-    <ol type="1">
-      <li>Hãy kể những tháng có 31 ngày trong năm.</li>
-      <li>Mô tả cách quay Trái Đất quay quanh Mặt Trời và vẽ hình minh họa vì sao một năm lại có 4 mùa.</li>
-      <li>“Sự nóng lên toàn cầu không liên quan đến hoạt động của bão nhiệt đới.” Biện luận ủng hộ và phản đối về nhận định trên.</li>
-      <li>Đánh giá tác động của quá trình chọn lọc tự nhiên lên sự đa dạng sinh học, đưa ra ví dụ nếu cần.</li>
-      <li>Đánh giá tác động tích cực và tiêu cực của đúng đắn chính trị (political correctness) lên sự tự do sáng tạo nội dung trên các nền tảng số hiện nay.</li>
-      <li>Nhà khoa học có nên tham gia vào chính trị không? Phân tích cả hai hướng tiếp cận và đưa ra nhận định cá nhân.</li>
-   </ol>
+1. Hãy kể những tháng có 31 ngày trong năm.
+2. Mô tả cách quay Trái Đất quay quanh Mặt Trời và vẽ hình minh họa vì sao một năm lại có 4 mùa.
+3. “Sự nóng lên toàn cầu không liên quan đến hoạt động của bão nhiệt đới.” Biện luận ủng hộ và phản đối về nhận định trên.
+4. Đánh giá tác động của quá trình chọn lọc tự nhiên lên sự đa dạng sinh học, đưa ra ví dụ nếu cần.
+5. Đánh giá tác động tích cực và tiêu cực của đúng đắn chính trị (political correctness) lên sự tự do sáng tạo nội dung trên các nền tảng số hiện nay.
+6. Nhà khoa học có nên tham gia vào chính trị không? Phân tích cả hai hướng tiếp cận và đưa ra nhận định cá nhân.
 	
 Ừ, đúng là thứ tự các câu hỏi tăng dần theo bậc thang tư duy trong hình. Câu đầu chỉ yêu cầu bạn nhớ kiến thức, câu thứ 2 cần bạn nhớ và cả hiểu tác động của ánh sáng Mặt Trời, trục quay của Trái Đất, quỹ đạo Trái Đất lên lượng nhiệt mỗi vùng nhận được trong năm, từ đó áp dụng để giải thích hiện tượng 4 mùa. v.v.
 
