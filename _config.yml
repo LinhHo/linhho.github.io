@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Linh Ho"
   avatar           : "/assets/images/Linh_Ho_portrait.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD student in energy meteorology at Institute of Geophysics and Meteorology, University of Cologne, Germany."
+  bio              : "PhD. in Meteorology"
   location         : "Cologne, Germany"
   email            : "linh.hotranthuy@gmail.com"
   links:
@@ -127,6 +127,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/linh-ho-tran-thuy/"
 
 # Site Footer
 footer:
