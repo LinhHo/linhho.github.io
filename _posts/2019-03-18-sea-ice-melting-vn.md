@@ -22,12 +22,13 @@ tags:
   - sea ice
 ---
 
-# Hỏi
+### Hỏi
 Những thay đổi khí hậu khi nhắc tới Băng tan hay thấy chỉ nói ở Bắc cực. Vậy thì những thay đổi này chỉ ở Bắc Cực hay ở Nam cực cũng vậy, với cả ở Nam Cực thì có đất đai nữa nên là khối băng hình thành và tan đi sẽ khác gì ở Bắc Cực ko?
 
-Chú ý: Mình chỉ cố trả lời câu hỏi của một người bạn một cách đầy đủ nhất có thể. Tuy nhiên với khả năng có hạn mình không đảm bảo cho nội dung này chính thức.
+#### Chú ý
+Mình chỉ cố trả lời câu hỏi của một người bạn một cách đầy đủ nhất có thể. Tuy nhiên với khả năng có hạn mình không đảm bảo cho nội dung này chính thức.
 
-# Trả lời
+### Trả lời
 Trước hết cần phải định nghĩa các loại băng ở hai cực, ở đây chỉ nói đến 3 loại chính. Băng biển (sea ice) là băng hình thành từ nước biển đông lại. Băng hà (glacier) là những khối băng hình thành do tích tụ từ tuyết nén lại, có xu hướng trượt dần do trọng lượng của chính nó, nên mới gọi là sông (hà). Núi băng – tạm dịch (ice sheet) - là những khối băng hà cực lớn, có kích thước lớn bằng cả lục địa, trên Trái Đất hiện chi có hai ice sheets là ở Nam Cực và Greenland. Điểm khác biệt quan trọng nhất là băng hà và núi băng hình thành từ tuyết nên chứa nước ngọt, còn băng biển hình thành từ nước biển mặn. Bắc cực là một đại dương nên chỉ có băng biển, trong khi đó Nam cực là một lục địa, chứa đủ các loại trên [1].
 
 Băng biển thay đổi theo mùa. Chúng hình thành vào mùa đông và tan ra vào mùa hè, tuy nhiên không tan hoàn toàn vì nhiệt độ ở hai cực vẫn thấp ngay cả trong mùa hè. Do đặc điểm địa lý, băng biển ở cả hai cực đều được theo dõi dựa trên lượng băng vào tháng Chín [2]. Hiện tượng băng tan nói đến ở đây là lượng băng giảm vào thời điểm được đo, tức là lượng băng tối thiểu ở Bắc cực và lượng băng tối đa ở Nam cực.
@@ -46,7 +47,7 @@ Một lý do khác có thể là do Bắc cực có mối quan hệ mật thiế
 Dù nói thế nào thì hiện tượng băng tan ở Bắc cực và Nam cực là hậu quả của việc nóng lên toàn cầu. Một bài báo mới đọc ngày hôm qua cho rằng, chúng ta đã thay đổi khí hậu Trái Đất vượt quá ngưỡng phục hồi của nó. Và ngay cả khi chúng ta ngưng thải mọi loại khí nhà kính ngay lập tức, nhiệt độ của bầu khí quyển Trái Đất vẫn sẽ tiếp tục tăng thêm 5 độ C trước khi có thể bình ổn lại.
 
 
-# Tham khảo
+### Tham khảo
 
 Image: National Snow and Ice Data Center, University of Colorado, Boulder, Colorado.
 

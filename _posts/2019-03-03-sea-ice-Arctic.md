@@ -23,11 +23,13 @@ tags:
 
 ---
 
-Q: Why the Arctic is mentioned much more than the Antarctica when it comes to sea ice melting? Is sea ice melting in Antarctica as well? Is there any difference in this phenomena considering that the Antarctica is a continent?
+### Question
+Why the Arctic is mentioned much more than the Antarctica when it comes to sea ice melting? Is sea ice melting in Antarctica as well? Is there any difference in this phenomena considering that the Antarctica is a continent?
 
-Disclaimer: This answer is only based on my own knowledge, which is trying to my best but sure still limited. I do not hold any responsibility for the credibility of this answer. - LH
+#### Disclaimer
+This answer is only based on my own knowledge, which is trying to my best but sure still limited. I do not hold any responsibility for the credibility of this answer. - LH
 
-A:
+### Answer
 
 Definition first
 Sea ice is, as simple as it sounds, ice which was formed from frozen sea water. Glacier is accumulated and compacted snow on mountains or near the poles. It can move slowly under its own pressure. Ice sheets are large masses of continental glacier. Two major ice sheets exist today are in Greenland and Antarctica [1].
@@ -51,7 +53,7 @@ Another reason for the attention might be the Arctic’s position. It lies near 
 
 Wherever the sea ice is melting in the Arctic or Antarctic, they are consequences of climate change. I’ve just read an article yesterday, stating that we already alter the climate system well beyond its recovery. Even when we stop emit green-house gases immediately, the temperature of the Earth’s atmosphere will keep rising by around 5oC before stabilise and the Arctic might be ice-free by 2040.
 
-===
+### References
 
 Image: National Snow and Ice Data Center, University of Colorado, Boulder, Colorado.
 
