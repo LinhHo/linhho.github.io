@@ -1,7 +1,25 @@
 ---
-layout: post
+layout: single
 title: "Bloom's taxonomy"
 date: 2020-04-12
+defaults:
+  - _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+categories:
+  - Scientific writing
+  - Uncategorized
+tags:
+  - Bloom's taxonomy
+  - How to learn
 ---
 
 Thử chọn xem bạn thích làm bài kiểm tra nào nhất nhé.
