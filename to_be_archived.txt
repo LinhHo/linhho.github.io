@@ -4,3 +4,9 @@ https://rpubs.com/matteodefelice/sankey-cbs
 
 Market coupling - week 4 network congestion (Energy market of today)
 https://lawexplores.com/market-coupling/
+
+Pandas plot stylist tables in a few code lines (Marco Gorelli)
+Polars styling user guide
+https://docs.pola.rs/user-guide/misc/styling/
+Great Tables example gallery
+https://posit-dev.github.io/great-tables/examples/
