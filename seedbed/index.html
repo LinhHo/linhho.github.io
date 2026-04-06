@@ -1,0 +1,160 @@
+---
+layout: archive
+title: Seedbed
+author_profile: true
+---
+
+<p>A space for hobbies, half-formed ideas, and things still growing. Not every thought needs to be fully developed before it deserves a place.</p>
+
+<style>
+  /*
+   * Whimsical grid: 3 columns (2fr 1fr 1fr)
+   * Painting spans two rows to create a tall portrait card.
+   *
+   *   Row 1 (220px): [ Random ideas — wide ]  [ Crocheting ]  [ Painting ↕ ]
+   *   Row 2 (260px): [    Music — wide      ]  [   Books    ]  [ (cont.)   ]
+   */
+  .seedbed-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 220px 260px;
+    gap: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .seedbed-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .seedbed-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+    text-decoration: none;
+  }
+
+  /* Card-specific placement */
+  .seedbed-card--ideas     { grid-column: 1; grid-row: 1; }
+  .seedbed-card--crochet   { grid-column: 2; grid-row: 1; }
+  .seedbed-card--painting  { grid-column: 3; grid-row: 1 / span 2; }
+  .seedbed-card--music     { grid-column: 1; grid-row: 2; }
+  .seedbed-card--books     { grid-column: 2; grid-row: 2; }
+
+  /* Placeholder gradient backgrounds */
+  .seedbed-card--ideas    { background: linear-gradient(135deg, #4a4080 0%, #7c6fcd 100%); }
+  .seedbed-card--crochet  { background: linear-gradient(135deg, #9b5e22 0%, #d4935a 100%); }
+  .seedbed-card--painting { background: linear-gradient(135deg, #1e4976 0%, #4f8fba 100%); }
+  .seedbed-card--music    { background: linear-gradient(135deg, #7a1f30 0%, #c25068 100%); }
+  .seedbed-card--books    { background: linear-gradient(135deg, #2d5433 0%, #5e9668 100%); }
+
+  .seedbed-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+      rgba(0,0,0,0.65) 0%,
+      rgba(0,0,0,0.15) 50%,
+      rgba(0,0,0,0.0) 100%);
+  }
+
+  .seedbed-card__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px 20px;
+    z-index: 1;
+  }
+
+  .seedbed-card__text h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    border: none;
+    line-height: 1.2;
+  }
+
+  .seedbed-card__text p {
+    color: rgba(255,255,255,0.78);
+    font-size: 0.75rem;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Placeholder icon — centred in the card */
+  .seedbed-card__icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    opacity: 0.25;
+  }
+
+  @media (max-width: 768px) {
+    .seedbed-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 180px);
+    }
+    .seedbed-card--ideas    { grid-column: 1 / span 2; grid-row: 1; }
+    .seedbed-card--crochet  { grid-column: 1; grid-row: 2; }
+    .seedbed-card--painting { grid-column: 2; grid-row: 2; }
+    .seedbed-card--music    { grid-column: 1; grid-row: 3; }
+    .seedbed-card--books    { grid-column: 2; grid-row: 3; }
+  }
+</style>
+
+<div class="seedbed-grid">
+
+  <a href="#" class="seedbed-card seedbed-card--ideas">
+    <div class="seedbed-card__icon">💡</div>
+    <div class="seedbed-card__overlay"></div>
+    <div class="seedbed-card__text">
+      <h3>💡 Random ideas</h3>
+      <p>Passing thoughts, curious questions, half-baked theories.</p>
+    </div>
+  </a>
+
+  <a href="#" class="seedbed-card seedbed-card--crochet">
+    <div class="seedbed-card__icon">🧶</div>
+    <div class="seedbed-card__overlay"></div>
+    <div class="seedbed-card__text">
+      <h3>🧶 Crocheting</h3>
+      <p>Works in progress and finished pieces.</p>
+    </div>
+  </a>
+
+  <a href="#" class="seedbed-card seedbed-card--painting">
+    <div class="seedbed-card__icon">🎨</div>
+    <div class="seedbed-card__overlay"></div>
+    <div class="seedbed-card__text">
+      <h3>🎨 Painting</h3>
+      <p>Watercolours, sketches, and experiments with colour.</p>
+    </div>
+  </a>
+
+  <a href="#" class="seedbed-card seedbed-card--music">
+    <div class="seedbed-card__icon">🎵</div>
+    <div class="seedbed-card__overlay"></div>
+    <div class="seedbed-card__text">
+      <h3>🎵 Music</h3>
+      <p>Pieces I'm learning, playlists, and things that move me.</p>
+    </div>
+  </a>
+
+  <a href="#" class="seedbed-card seedbed-card--books">
+    <div class="seedbed-card__icon">📚</div>
+    <div class="seedbed-card__overlay"></div>
+    <div class="seedbed-card__text">
+      <h3>📚 Books</h3>
+      <p>Reading notes and things worth returning to.</p>
+    </div>
+  </a>
+
+</div>

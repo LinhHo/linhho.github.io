@@ -1,28 +1,291 @@
 ---
-layout: archive
+layout: default
 ---
 
-<div class="banner">
-  <img class="banner-imgage" src="assets/images/Norwich_castle_Meadow_201709.jpg">
-  <figcaption text-align:right>Castle Meadow where I started my new journey (Norwich, UK, 2017)</figcaption>
+<style>
+  /* Remove default top padding on home page */
+  .layout--home .initial-content {
+    padding-top: 0 !important;
+  }
 
+  /* Full-width breakout helper shared by hero and cards section */
+  .home-hero,
+  .home-cards-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  /* ── Hero ── */
+  .home-hero {
+    height: calc(100vh - 4.5rem);
+    /* viewport minus masthead height */
+    overflow: hidden;
+  }
+
+  .home-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+  }
+
+  .home-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.55) 0%,
+        /* darker at top — nav legibility */
+        rgba(0, 0, 0, 0.15) 18%,
+        /* lighter in the open sky */
+        rgba(0, 0, 0, 0.35) 55%,
+        rgba(0, 0, 0, 0.65) 100%);
+    /* dark at bottom — card overlap zone */
+  }
+
+  .home-hero__inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .home-hero__text {
+    max-width: 420px;
+    color: #fff;
+  }
+
+  .home-hero__text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+    color: #fff;
+    border: none;
+    line-height: 1.1;
+  }
+
+  .home-hero__text p {
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.92;
+  }
+
+  .home-hero__portrait {
+    /* Floats freely in the left (sky) area, outside the content column */
+    position: absolute;
+    left: 7vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .home-hero__portrait img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    display: block;
+  }
+
+  .home-hero__caption {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.72rem;
+    font-style: italic;
+  }
+
+  /* ── Cards section ──
+     Pull up so 70% of each square card overlaps the hero.
+     Card width = (min(100vw, 1200px) - 72px padding - 32px gaps) / 3
+     70% of that ≈ (100vw - 104px) × 0.233, capped at 255px for wide screens.
+     max() with negative values: keeps the LEAST negative (smaller overlap on wide screens
+     is prevented by the -255px floor). */
+  .home-cards-section {
+    /*
+     * Pull section up so 70% of each square card overlaps the hero.
+     * Card width ≈ (100vw - 104px) / 3  (104px = 72px padding + 32px gaps)
+     * 70% of card height = card_width × 0.7
+     * So margin-top = (100vw - 104px) / 3 × -0.7 = (100vw - 104px) × -0.233
+     * Capped with min() so it never exceeds -295px on very wide screens
+     * (cards max out at ~422px wide once the 1200px grid cap kicks in).
+     */
+    margin-top: min(-120px, calc((100vw - 104px) * -0.15));
+    padding: 0 36px 48px;
+    background: transparent;
+    /* hero image shows through the overlap zone */
+    position: relative;
+    z-index: 2;
+  }
+
+  .home-cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .home-card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .home-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+
+  .home-card__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .home-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.25) 45%,
+        rgba(0, 0, 0, 0.05) 100%);
+  }
+
+  .home-card__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 18px;
+    z-index: 1;
+  }
+
+  .home-card__text h2 {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    border: none;
+    line-height: 1.2;
+  }
+
+  .home-card__text p {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.78rem;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .home-hero {
+      height: calc(100svh - 4.5rem);
+    }
+
+    .home-hero__text h1 {
+      font-size: 2rem;
+    }
+
+    .home-hero__portrait {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 35%;
+    }
+
+    .home-hero__portrait img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .home-hero__inner {
+      padding: 0 20px;
+      padding-top: 120px;
+      /* clear the portrait on mobile */
+      align-items: flex-start;
+    }
+
+    .home-cards-section {
+      /* on mobile cards stack to 1-col; use a smaller fixed overlap */
+      margin-top: -80px;
+      padding: 0 16px 36px;
+    }
+
+    .home-cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="home-hero">
+  <img class="home-hero__bg" src="{{ '/assets/images/Norwich_castle_Meadow_201709.jpg' | relative_url }}"
+    alt="Norwich Castle Meadow">
+  <div class="home-hero__overlay"></div>
+  <div class="home-hero__portrait">
+    <img src="{{ '/assets/images/Linh_Ho_portrait.jpg' | relative_url }}" alt="Linh Ho portrait">
+  </div>
+  <div class="home-hero__inner">
+    <div class="home-hero__text">
+      <h1>Linh Ho</h1>
+      <p>Researcher in energy meteorology. Exploring atmosphere, climate, energy systems, and the patterns that shape
+        our world.</p>
+    </div>
+  </div>
+  <span class="home-hero__caption">Castle Meadow, Norwich, UK</span>
 </div>
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
+<div class="home-cards-section">
+  <div class="home-cards-grid">
 
-{{ content }}
+    <a href="{{ '/research/' | relative_url }}" class="home-card">
+      <img class="home-card__bg" src="{{ '/assets/images/forest.jpeg' | relative_url }}" alt="Forest">
+      <div class="home-card__overlay"></div>
+      <div class="home-card__text">
+        <h2>🌲 Research</h2>
+        <p>Meteorology, renewable energy, and the green energy transistion.</p>
+      </div>
+    </a>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    <a href="{{ '/blog/' | relative_url }}" class="home-card">
+      <img class="home-card__bg" src="{{ '/assets/images/flowers.jpg' | relative_url }}" alt="Flowers">
+      <div class="home-card__overlay"></div>
+      <div class="home-card__text">
+        <h2>🌿 Blog</h2>
+        <p>Thoughts, reflections, and stories about everything.</p>
+      </div>
+    </a>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+    <a href="{{ '/seedbed/' | relative_url }}" class="home-card">
+      <img class="home-card__bg" src="{{ '/assets/images/cat_sprouting.jpg' | relative_url }}" alt="Cat sprouting">
+      <div class="home-card__overlay"></div>
+      <div class="home-card__text">
+        <h2>🌱 Seedbed</h2>
+        <p>Hobbies, half-formed ideas, and things still growing.</p>
+      </div>
+    </a>
 
-{% for post in posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+  </div>
+</div>

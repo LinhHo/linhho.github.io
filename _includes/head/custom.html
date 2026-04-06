@@ -2,4 +2,94 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+<style>
+  /*
+   * Widen content column on archive and single-post pages.
+   */
+  @media (min-width: 1024px) {
+
+    .layout--archive #main .archive,
+    .layout--posts #main .page,
+    .layout--single #main .page {
+      padding-right: 0;
+    }
+  }
+
+  /* ══════════════════════════════════════════════════════
+     GLOBAL NAV — dark background + white text on all pages
+     Matches the Norwich Castle colour palette (deep slate-green).
+     ══════════════════════════════════════════════════════ */
+  .masthead {
+    background: #1e2d25 !important;
+    /* dark forest green — derived from the Norwich photo */
+    border-bottom: none !important;
+  }
+
+  .masthead .greedy-nav {
+    background: transparent !important;
+  }
+
+  .masthead .site-title,
+  .masthead .site-subtitle,
+  .masthead .visible-links a,
+  .masthead .search__toggle,
+  .masthead .greedy-nav__toggle {
+    color: #fff !important;
+    font-weight: 600;
+    background: transparent !important;
+  }
+
+  .masthead .visible-links a:hover {
+    opacity: 0.75;
+  }
+
+  /* Hamburger bars (empty spans styled with background) */
+  .masthead .navicon,
+  .masthead .navicon::before,
+  .masthead .navicon::after {
+    background: #fff !important;
+  }
+
+  /* ── Home page only: semi-transparent so the photo shows through ── */
+  .layout--home .masthead {
+    background: rgba(0, 0, 0, 0.45) !important;
+  }
+
+  /* Pull hero flush behind the masthead on home */
+  .layout--home .initial-content {
+    margin-top: -4.5rem;
+  }
+
+  /* ══════════════════════════════════════════════════════
+     INNER PAGES — faint Norwich Castle watermark background
+     A very pale version of the hero photo sits behind all
+     non-home page content. The white overlay (94% opacity)
+     keeps text fully legible while adding a sense of place.
+     ══════════════════════════════════════════════════════ */
+  body:not(.layout--home) {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url('/assets/images/Norwich_castle_Meadow_201709.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    background-attachment: fixed;
+  }
+
+  body:not(.layout--home) #main {
+    padding-top: 0.5rem;
+  }
+
+  /* Page title styling — consistent across all pages */
+  .page__title,
+  .archive__subtitle,
+  h1#page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e2d25;
+    border-bottom: 2px solid #1e2d25;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.8em;
+  }
+</style>
+
 <!-- end custom head snippets -->
